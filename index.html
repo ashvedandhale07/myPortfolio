@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/d610831a36.js" crossorigin="anonymous"></script>   
+    </head>
+    <body>
+
+        
+
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo1.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hi, I'm <span>Ashved Andhale</span> <br>From Nashik, Maharashtra!</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- about -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user1.jpg" />
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1><br>
+                        <p class="myInfo"> I'm a Computer Engineering Undergrad student who is currently pursuing Btech in Computer Engineering from Vishwakarma Institute of Information Technology, Pune. Also I am pursuing honors course with specialization in Cyber Security. I am quite good in web development and still learning new technologies like AngularJS, ReactJS and NodeJS. Also, I am good at programming with Java. It helps me solve many problems. Talkin' about my hobbies, I am a motorcycle enthusiast with love for travelling. </p>
+                        <br>
+                        
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                            <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                            <p class="tab-links" onclick="openTab('education')">Education</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li> <span>Web Development</span> <br> Designing Web/App Interfaces </li>
+                                <li> <span>Programming</span> <br> Solving problems using programming languages like Java and C++ </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li> <span>Spotify Clone</span> <br> Tried to clone spotify and successfully implemented some of the functionality like playing the songs and creating playlists using HTML, CSS and Java Servlets and JSP's. </li>
+                                <li> <span>Billing System</span> <br> Implemented a billing system for a restaurant using PHP along with HTML and CSS. </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li> <span>2021-Currently Pursuing</span> <br> BTech in Computer Engineering with Honors in Cyber Security </li>
+                                <li> <span>2018-2021</span> <br> Diploma in Computer ENgineering </li>
+                                <li> <span>2018</span> <br> SSC </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- portfolio -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>This app helps you to feel your social presence by connecting the poeple you know around the world!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>This app helps you to feel your social presence by connecting the poeple you know around the world!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Social Media App</h3>
+                            <p>This app helps you to feel your social presence by connecting the poeple you know around the world!</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                <a href="#" class="btn">See more</a>
+
+            </div>
+        </div>
+
+        <!--  contact section  -->
+        <div id="contact">
+            <div class="container">
+                <div class="contact-left" >
+                    <h1 class="sub-title">Contact me</h1><br>
+                    <a href="https://www.gmail.com" class="mailLink" style="font-size: 25px;" ><i class="fa-regular fa-envelope"></i> ashvedandhale07@gmail.com</a><br><br>
+                    <p style="font-size: 25px;"><i class="fa-solid fa-phone-volume"></i> Phone: 7620811663</p><br>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/AshvedResume.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <!-- will code it later-->
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function openTab(tabname)
+        {
+            for(tablink of tablinks)
+            {   
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+
+    </script>
+
+    <script>
+        sidemenu = document.getElementById("sidemenu");
+
+        function openmenu()
+        {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu()
+        {
+            sidemenu.style.right = "-200px";
+        }
+
+
+
+    </script>
+
+
+
+</html>
